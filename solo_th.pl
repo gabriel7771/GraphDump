@@ -1,11 +1,5 @@
-# este algoritmo calcula el th de una traza de salida de NS2
-# type: perl thwe.pl <archivo de traza> <nodo> <intervalo de tiempo>   >    archivo de salida.txt
-# Copiar el script en el mismo directorio de la traza, 
-# despues de la simulación digite los siguientes comandos:
 # perl thwe.pl <archivo_de_traza.tr> <nodo> <intervalo de tiempo> > archivo_de_salida.txt
 # ejemplo: "perl thwe.pl traza.txt 1 > th.txt"       
-# --> 13 es el nodo en el cual se va a calcular el th y 
-# 1 es el intervalo de tiempo en que se calculará el th (cada 1 seg se calcula el th)
 
 $archivo=$ARGV[0];
 $intt=$ARGV[1];
