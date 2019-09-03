@@ -6,4 +6,4 @@ set ylabel "bits/s"
 
 set xtics font ", 6"
 
-plot "/home/gabriel/graph_dump/created/solo_th.txt" with linespoints
+plot "/home/graph_dump/created/solo_th.txt" with linespoints
