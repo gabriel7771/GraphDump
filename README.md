@@ -3,7 +3,7 @@ Software that calculates and plot Throughput, Delay and other metrics from a tcp
 
 Dependencies (most come installed in Unix): Python, Perl, AWK, Grep, Sed, GNUPlot, Sort, Join. 
 
-Run program with:
+Run the program with:
 python graphdump.py
 
 The tcpdump file must be created following (at least) these commands: -nn -v -tt
