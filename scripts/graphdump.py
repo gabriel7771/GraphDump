@@ -2,15 +2,6 @@
 import Tkinter as tk
 import tkFileDialog
 import Pmw, sys, os
-def suma():
-    i=0
-    while i < 5 :
-        print (i)
-        i=i+1
-    root = tk.Tk()
-    root.title("suma")
-    text = tk.Label(root, text=i)
-    text.pack()
 
 def buscar_tp():
     file = tkFileDialog.askopenfile(parent=root,mode='rb',title='Choose a file')
@@ -24,7 +15,7 @@ def buscar_tp():
         current_dir=os.getcwd()
 	print (file_dir)
 	print (current_dir)
-	os.system("cp " + file_dir +" " + "/home/gabriel/graph_dump/created//trafico")
+	os.system("cp " + file_dir +" " + "/home/graph_dump/created//traffic")
 def tp():
 
     os.system("sh dump_graph.sh")
@@ -42,7 +33,7 @@ def buscar_delay():
         current_dir=os.getcwd()
 	print (file_dir)
 	print (current_dir)
-	os.system("cp " + file_dir +" " + "/home/gabriel/graph_dump/created/delay.txt")
+	os.system("cp " + file_dir +" " + "/home/graph_dump/created/delay.txt")
 def delay():
     os.system("sh dump_delay.sh")
 
@@ -50,8 +41,8 @@ def delay():
 def estadisticas():
 
     os.system("sh dump.sh")
-    os.system("perl statistics.pl /home/gabriel/graph_dump/created/traf_3 1 > /home/gabriel/graph_dump/created/statistics.txt")
-    os.system("xdg-open /home/gabriel/graph_dump/created/statistics.txt")
+    os.system("perl statistics.pl /home/graph_dump/created/traf_3 1 > /home/graph_dump/created/statistics.txt")
+    os.system("xdg-open /home/graph_dump/created/statistics.txt")
 
 
 def salir():
